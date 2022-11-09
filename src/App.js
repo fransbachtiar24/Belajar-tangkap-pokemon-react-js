@@ -1,12 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Pokemon from "./pages/Home/Pokemon";
+import Home from "./pages/Home/Home";
+import Header from "./components/navbar/index";
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Pokemon />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
